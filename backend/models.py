@@ -9,5 +9,6 @@ class JobPosting(Base):
     title = Column(String, nullable=False)
     company = Column(String, nullable=True)
     raw_description = Column(Text, nullable=False)
+    dedup_key = Column(String, unique=True, index=True)
     source = Column(String, nullable=True)  # e.g. "manual", "greenhouse", "scraped"
     scraped_at = Column(DateTime(timezone=True), server_default=func.now())
