@@ -13,3 +13,5 @@ for d in (RAW_DIR, PROCESSED_DIR):
 
 # Dataset identifiers
 DJINNI_HF_REPO = "lang-uk/recruitment-dataset-job-descriptions-english"
+GREENHOUSE_COMPANIES_URL = "https://raw.githubusercontent.com/Feashliaa/job-board-aggregator/main/data/greenhouse_companies.json"
+LEVER_COMPANIES_URL = "https://raw.githubusercontent.com/Feashliaa/job-board-aggregator/main/data/lever_companies.json"
